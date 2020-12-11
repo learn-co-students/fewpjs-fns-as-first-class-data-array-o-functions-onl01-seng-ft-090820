@@ -43,9 +43,7 @@ const routine = [
     unleashDog
 ]
 
-function exerciseDog(dogName, dogBreed) {
-    for (let i = 0; i < routine.length; i++) {
-        console.log(routine[i](dogName, dogBreed))
-    }
+function exerciseDog(dog, breed) {
+    return routine.map(fn => fn(dog, breed))
 }
 
